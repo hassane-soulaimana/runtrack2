@@ -1,12 +1,8 @@
 <?php 
-for ($i = 0; $i <= 1337; $i++) {
-    if($i==42){
-        echo "<b><u>$i</u></b><br>";
+for ($i = 0; $i <= 3334; $i++) {
+    if (in_array($i, [26, 37, 88, 1111, 3233])) {
+        continue;
     }
-    else{ 
-         echo $i . '<br>';
-    
-    };
-   
+    echo $i . '<br />';
 }
 ?>
