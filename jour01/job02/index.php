@@ -1,7 +1,7 @@
 <?php
-/*  1 */ 
+// Une ligne
 echo "Hello LaPlateforme!<br>";
 
-/* 2*/
-echo"Hello LaPlateforme!<br>";a
+/* Un bloc */
+echo "Hello LaPlateforme!<br>";
 ?>
