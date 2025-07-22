@@ -11,7 +11,7 @@ echo "$str2 $str  $str3<br>";
 // creation de val
 $val= 6;
 
-echo "$val";
+echo "$val<br>";
 
 // Ajout de 4 a la variable
 $val += 4;
