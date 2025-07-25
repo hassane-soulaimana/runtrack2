@@ -1,58 +1,54 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-    <title>Dessiner une figure</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maison</title>
 </head>
 
 <body>
 
-    <!DOCTYPE html>
-    <html>
+    <form method="post">
+        <label>Largeur :</label>
+        <input type="text" name="largeur">
 
-    <head>
-        <title>Dessiner une figure</title>
-    </head>
+        <label>Hauteur :</label>
+        <input type="text" name="hauteur">
 
-    <body>
-
-        <form method="post">
-            <label>Largeur :</label>
-            <input type="text" name="largeur">
-
-            <label>Hauteur :</label>
-            <input type="text" name="hauteur">
-
-            <input type="submit" value="Envoyer">
-        </form>
+        <input type="submit" value="Envoyer">
+    </form>
 
 
-        <pre>
+    <pre>
 <?php
 if (isset($_POST['largeur']) && isset($_POST['hauteur'])) {
     $largeur = $_POST['largeur'];
     $hauteur = $_POST['hauteur'];
 
-    if ($largeur == 10 && $hauteur == 5) {
-
+    if ($largeur > 2 && $hauteur > 1 && $largeur % 2 == 0) {
+        // Dessin du toit
         for ($i = 0; $i < $largeur / 2; $i++) {
-            echo str_repeat(" ", ($largeur / 2) - $i);
+            $espaces = ($largeur / 2) - $i;
+            echo str_repeat(" ", $espaces);
             echo "/";
             echo str_repeat("-", $i * 2);
-            echo "\\\n";
+            echo "\\";
+            echo "\n";
         }
+        // les murs
         for ($i = 0; $i < $hauteur; $i++) {
-            echo "|" . str_repeat(" ", $largeur - 2) . "|\n";
+            echo " " . "|" . str_repeat(" ", $largeur - 2) . "|\n";
         }
-
-        echo str_repeat("-", $largeur) . "\n";
-    } else {
-        echo "Veuillez entrer largeur = 10 et hauteur = 5 pour voir la figure.";
+        // la base
+        echo " " . str_repeat("-", $largeur) . "\n";
     }
 }
 ?>
 </pre>
 
-    </body>
 
-    </html>
+
+</body>
+
+</html>
