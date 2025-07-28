@@ -26,7 +26,7 @@ if (isset($_POST['largeur']) && isset($_POST['hauteur'])) {
     $largeur = $_POST['largeur'];
     $hauteur = $_POST['hauteur'];
 
-    if ($largeur > 2 && $hauteur > 1 && $largeur % 2 == 0) {
+    if ($largeur > 2 && $hauteur > 2) {
         // Dessin du toit
         for ($i = 0; $i < $largeur / 2; $i++) {
             $espaces = ($largeur / 2) - $i;
