@@ -1,0 +1,23 @@
+body {
+    background: linear-gradient(135deg, #ffdecc, #ffe0f7);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #4a4a4a;
+    padding: 40px;
+}
+
+form {
+    background-color: #fffaf0;
+    padding: 30px;
+    border: 4px #ff89c0;
+    border-radius: 16px;
+    max-width: 400px;
+    margin: auto;
+}
+
+label, select, input[type="submit"] {
+    color: #ffa9d0;
+}
+
+input[type="submit"]:hover {
+    transform: scale(1.05);
+}

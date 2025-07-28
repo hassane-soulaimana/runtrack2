@@ -1,0 +1,23 @@
+body {
+    background: linear-gradient(140deg, #000000, #b1b1b1);
+    font-family: 'Comic Sans MS', cursive;
+    color: #4a4a4a;
+    padding: 40px;
+}
+
+form {
+    background-color: #000000;
+    padding: 30px;
+    border: 4px #131212;
+    border-radius: 16px;
+    max-width: 400px;
+    margin: auto;
+}
+
+label, select, input[type="submit"] {
+    color: #e60606;
+}
+
+input[type="submit"]:hover {
+    transform: scale(1.05);
+}
